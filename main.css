@@ -1,0 +1,100 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(41,197,255);
+    background: linear-gradient(90deg,
+    white 0%,
+    white 50%,
+     rgba(41,197,255,1) 75%, 
+     rgba(0,50,255,1) 100%);
+    background-size: 400% 400%;
+    background-position: 100% 0%;
+}
+
+header{
+    text-align: center;
+    margin-top: 200px;
+}
+
+ul.entry-list {
+    margin: 50px auto;
+    padding: 0;
+    text-align: center;
+}
+
+ul.entry-list li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+    font-size: 50pt;
+    text-shadow: black 3px 3px 3px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: yellow;
+}
+
+/* Animations */
+.logo-animation {
+    animation-duration: 1s;
+    animation-name: Enlarge;
+}
+
+.background-animation {
+    animation-duration: 2s;
+    animation-name: ChangeBGColor;
+}
+
+.entry-list-animation {
+    animation-duration: 2s;
+    animation-name: ChangeAlphaColor;
+}
+
+@keyframes Enlarge {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes ChangeBGColor {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@keyframes ChangeAlphaColor {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
