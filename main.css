@@ -27,14 +27,14 @@ header{
 }
 
 .logo img {
-    z-index: -1;
     position: absolute;
     display: block;
-    height: 350px;
+    height: 150px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
+    filter: drop-shadow(3px 3px 3px black);
 }
 
 ul.entry-list {
@@ -64,12 +64,7 @@ a:hover, a:active {
 }
 
 /* Animations */
-.logo-animation-icon {
-    animation-duration: 0.5s;
-    animation-name: RotateAndChangeAlphaColor;
-}
-
-.logo-animation-text {
+.logo-animation {
     animation-duration: 1s;
     animation-name: ChangeAlphaColor;
 }
