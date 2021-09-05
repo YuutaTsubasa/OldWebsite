@@ -1,0 +1,36 @@
+.mainContent {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.selfIntroduction {
+    display: grid;
+    width: 85%;
+    margin: 2rem auto;
+    grid-template-columns: 0.25fr 1fr;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.name h1, .name h4 {
+    display: inline;
+}
+
+.name h1 {
+    margin-right: 10px;
+}
+
+.borderCircle {
+    border-radius: 100%;
+}
+
+.twitter {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
