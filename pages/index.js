@@ -38,7 +38,7 @@ export default function Home({ communityLinksData, youtubeVideosData }) {
           </section>
         </section>
         <hr />
-        <img src="/images/week.png" alt="本週行事曆"/>;
+        <img src="/images/week.png" alt="本週行事曆"/>
         <hr />
         <section className={styles.news}>
           <YoutubeVideos youtubeVideosData={youtubeVideosData}/>
