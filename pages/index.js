@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Layout, { name, siteTitle } from '../components/layout';
 import YoutubeVideos from '../components/youtubeVideos';
 import styles from './index.module.css';
@@ -27,14 +26,7 @@ export default function Home({ communityLinksData, youtubeVideosData }) {
       <section className={styles.mainContent}>
         <section className={styles.selfIntroduction}>
           <section>
-            <Image
-                priority
-                src="/images/avatar.png"
-                className={styles.borderCircle}
-                height={144}
-                width={144}
-                alt={name}
-              />
+            <img src="/images/avatar.png" className={styles.borderCircle} alt={name} />
           </section>
           <section>
             <div className={styles.name}>

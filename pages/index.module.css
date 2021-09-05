@@ -22,6 +22,7 @@
 }
 
 .borderCircle {
+    width: 85%;
     border-radius: 100%;
 }
 
@@ -33,4 +34,10 @@
 .news {
     display: grid;
     grid-template-columns: 2fr 1fr;
+}
+
+@media screen and (max-width: 800px) {
+    .news {
+        grid-template-columns: 1fr;
+    }
 }

@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/dist/client/image';
 import CommunityLinks from './communityLinks';
 import styles from './layout.module.css';
 
