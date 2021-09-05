@@ -1,0 +1,16 @@
+-
+  name: Twitter
+  url: http://yutaii.run/twitter
+  fontawesome: fab fa-twitter
+-
+  name: Youtube
+  url: http://yutaii.run/youtube
+  fontawesome: fab fa-youtube
+-
+  name: Facebook
+  url: http://yutaii.run/facebook
+  fontawesome: fab fa-facebook
+- 
+  name: Marshmallow
+  url: http://yutaii.run/marshmallow
+  image: /images/marshmallow.png
