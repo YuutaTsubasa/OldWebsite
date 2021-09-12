@@ -10,7 +10,11 @@
   name: Facebook
   url: http://yutaii.run/facebook
   fontawesome: fab fa-facebook
-- 
+-
+  name: GitHub
+  url: http://yutaii.run/github
+  fontawesome: fab fa-github
+-
   name: Marshmallow
   url: http://yutaii.run/marshmallow
   image: /images/marshmallow.png
