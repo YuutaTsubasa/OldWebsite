@@ -30,7 +30,7 @@ export default function Home({ communityLinksData, youtubeVideosData }) {
           </section>
           <section>
             <div className={styles.name}>
-              <h1>{name}</h1><h4><a href="https://twitter.com/YuutaTsubasa/status/1418251268846276608" target="_blank">詳細設定</a></h4>
+              <h1>{name}</h1><h4><a href="https://twitter.com/YuutaTsubasa/status/1418251268846276608" target="_blank">詳細介紹</a></h4>
             </div>
             <div>
               為台灣個人勢Vtuber、盔甲正太系程式 Vtuber，語言主要以中文為主，直播內容以程式、唱歌、遊戲、雜談為主。
