@@ -18,10 +18,10 @@ export default function Layout({children, subURL, communityLinksData}) {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@YuutaTsubasa"/>
                 <meta name="twitter:creator" content="@YuutaTsubasa"/>
-                <meta name="og:title" content={siteTitle} />
-                <meta name="og:description" content={description} />
-                <meta name="og:url" content={`${baseURL}/${subURL}`} />
-                <meta name="og:image" content={imageURL}/>
+                <meta property="og:title" content={siteTitle} />
+                <meta property="og:description" content={description} />
+                <meta property="og:url" content={`${baseURL}/${subURL}`} />
+                <meta property="og:image" content={imageURL}/>
                 <meta name="twitter:image" content={imageURL}/>
             </Head>
             <header className={styles.header}>
