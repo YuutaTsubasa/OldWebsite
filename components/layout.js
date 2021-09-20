@@ -6,6 +6,8 @@ import styles from './layout.module.css';
 export const name = '悠太翼 Yuuta Tsubasa'
 export const siteTitle = '悠太翼(YuutaTsubasa) 🛡️ 盔甲正太系程式 Vtuber';
 const description = `${name} 官方網站`;
+const baseURL = "https://yuuta-tsubasa.studio";
+const imageURL = `${baseURL}/images/avatar.png`;
 
 export default function Layout({children, subURL, communityLinksData}) {
     return (
@@ -17,12 +19,10 @@ export default function Layout({children, subURL, communityLinksData}) {
                 <meta name="twitter:site" content="@YuutaTsubasa"/>
                 <meta name="twitter:creator" content="@YuutaTsubasa"/>
                 <meta name="og:title" content={siteTitle} />
-                <meta 
-                    name="og:description"
-                    content={description}
-                />
-                <meta name="og:url" content={`https://yuuta-tsubasa.studio/${subURL}`} />
-                <meta name="og:image" content="/images/banner.png"/>
+                <meta name="og:description" content={description} />
+                <meta name="og:url" content={`${baseURL}/${subURL}`} />
+                <meta name="og:image" content={imageURL}/>
+                <meta name="twitter:image" content={imageURL}/>
             </Head>
             <header className={styles.header}>
                 <CommunityLinks communityLinksData={communityLinksData}/>
