@@ -7,7 +7,7 @@ export const name = '悠太翼 Yuuta Tsubasa'
 export const siteTitle = '悠太翼(YuutaTsubasa) 🛡️ 盔甲正太系程式 Vtuber';
 const description = `${name} 官方網站`;
 const baseURL = "https://yuuta-tsubasa.studio";
-const imageURL = `${baseURL}/images/avatar.png`;
+const imageURL = `${baseURL}/images/banner.png`;
 
 export default function Layout({children, subURL, communityLinksData}) {
     return (
