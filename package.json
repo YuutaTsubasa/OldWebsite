@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
     "date-fns": "^2.23.0",
     "gray-matter": "^4.0.3",
     "js-yaml": "^4.1.0",

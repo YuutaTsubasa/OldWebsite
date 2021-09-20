@@ -1,0 +1,18 @@
+.contentSection {
+    width: 85%;
+    margin: 0px auto;
+}
+
+.backgroundFullSection {
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 5px 5px 15px black;
+    text-shadow: none;
+    outline: none;
+}
+
+.backgroundTransparentSection {
+    background: transparent;
+}

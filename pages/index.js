@@ -2,12 +2,14 @@ import Head from 'next/head';
 import Layout, { name, siteTitle } from '../components/layout';
 import YoutubeVideos from '../components/youtubeVideos';
 import styles from './index.module.css';
-import { getCommunityLinksData } from "../lib/communitiesDataLoader";
-import { getYoutubeVideosData } from '../lib/youtubeVideosDataLoader';
+import { 
+  loadYamlData, 
+  COMMUNITIES_DATA_FILE_NAME,
+  YOUTUBE_VIDEOS_DATA_FILE_NAME } from '../lib/yamlDataLoader';
 
 export async function getStaticProps() {
-  const communityLinksData = getCommunityLinksData();
-  const youtubeVideosData = getYoutubeVideosData();
+  const communityLinksData = loadYamlData(COMMUNITIES_DATA_FILE_NAME);
+  const youtubeVideosData = loadYamlData(YOUTUBE_VIDEOS_DATA_FILE_NAME);
   return {
     props: {
       communityLinksData,
@@ -18,7 +20,7 @@ export async function getStaticProps() {
 
 export default function Home({ communityLinksData, youtubeVideosData }) {
   return (
-    <Layout home communityLinksData={communityLinksData}>
+    <Layout communityLinksData={communityLinksData}>
       <Head>
         <title>{siteTitle}</title>
       </Head>

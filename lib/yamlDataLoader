@@ -1,0 +1,13 @@
+import fs from 'fs';
+import path from 'path';
+import yaml from 'js-yaml';
+import process from 'process';
+
+export const COMMUNITIES_DATA_FILE_NAME = "communitiesData.yml";
+export const YOUTUBE_VIDEOS_DATA_FILE_NAME = "youtubeVideosData.yml";
+export const WEEK_GALLERY_DATA_FILE_NAME = "weekGalleryData.yml";
+
+export function loadYamlData(fileName) {
+    let filePath = path.join(process.cwd(), 'data', fileName);
+    return yaml.load(fs.readFileSync(filePath));
+}

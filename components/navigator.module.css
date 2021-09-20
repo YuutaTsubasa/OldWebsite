@@ -1,0 +1,35 @@
+.navbar {
+    width: 100%;
+    background-color: rgb(13, 27, 107);
+}
+
+.navBarList {
+    padding: 0px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;   
+    text-align: center;
+    height: 100%;
+}
+
+.navBarListItem {
+    width: 100%;
+    font-size: large;
+}
+
+.navBarLink {
+    background-color: rgb(13, 27, 107);
+    display: block;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    outline: none;
+    padding: 10px;
+}
+
+.navBarLink:hover {
+    background-color: rgb(202, 202, 202);
+    color: black;
+    text-shadow: none;
+    text-decoration: none;
+}

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import CommunityLinks from './communityLinks';
+import Navigator from './navigator';
 import styles from './layout.module.css';
 
 export const name = '悠太翼 Yuuta Tsubasa'
@@ -21,6 +22,7 @@ export default function Layout({children, communityLinksData}) {
             <header className={styles.header}>
                 <CommunityLinks communityLinksData={communityLinksData}/>
                 <div className={styles.banner}></div>
+                <Navigator/>
             </header>
             <main>{children}</main>
             <footer className={styles.footer}>

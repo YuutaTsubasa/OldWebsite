@@ -4,12 +4,18 @@
 }
 
 .selfIntroduction {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
     display: grid;
     width: 85%;
-    margin: 2rem auto;
+    margin: 1rem auto;
+    padding: 2rem;
     grid-template-columns: 0.25fr 1fr;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 15px black;
+    border: 5px solid black;
+    border-radius: 20px 20px 20px 20px;
     
 }
 
@@ -34,6 +40,8 @@
 .news {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
 }
 
 @media screen and (max-width: 800px) {
