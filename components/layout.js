@@ -7,7 +7,7 @@ export const name = '悠太翼 Yuuta Tsubasa'
 export const siteTitle = '悠太翼(YuutaTsubasa) 🛡️ 盔甲正太系程式 Vtuber';
 const description = `${name} 官方網站`;
 
-export default function Layout({children, communityLinksData}) {
+export default function Layout({children, subURL, communityLinksData}) {
     return (
         <div className={styles.container}>
             <Head>
@@ -21,6 +21,7 @@ export default function Layout({children, communityLinksData}) {
                     name="og:description"
                     content={description}
                 />
+                <meta name="og:url" content={`http://yuuta-tsubasa.studio/${subURL}`} />
                 <meta name="og:image" content="/images/banner.png"/>
             </Head>
             <header className={styles.header}>

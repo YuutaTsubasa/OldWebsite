@@ -36,7 +36,7 @@ export default function Creation({
   marshmallowGalleryData,
   ecpayGalleryData}) {
   return (
-    <Layout communityLinksData={communityLinksData}>
+    <Layout communityLinksData={communityLinksData} subURL="creation">
       <Head>
         <title>{`${siteTitle}：翼友與協助者`}</title>
       </Head>

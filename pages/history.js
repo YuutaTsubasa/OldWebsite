@@ -64,7 +64,7 @@ export default function History({
   toolGalleryData,
   weekGalleryData}) {
   return (
-    <Layout communityLinksData={communityLinksData}>
+    <Layout communityLinksData={communityLinksData} subURL="history">
       <Head>
         <title>{`${siteTitle}：歷史紀錄`}</title>
       </Head>

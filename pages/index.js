@@ -21,7 +21,7 @@ export async function getStaticProps() {
 
 export default function Home({ communityLinksData, youtubeVideosData }) {
   return (
-    <Layout communityLinksData={communityLinksData}>
+    <Layout communityLinksData={communityLinksData} subURL="">
       <Head>
         <title>{siteTitle}</title>
       </Head>
