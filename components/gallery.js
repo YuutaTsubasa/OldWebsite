@@ -6,7 +6,6 @@ export default function Gallery({dataList}) {
         <div className={style.galleryListItem} key={data.title}>
             <a href={data.url} target="_blank">
                 <img src={data.image} alt={data.title}/>
-                <h4>{data.title}</h4>
             </a>
         </div>))}
     </div>);
