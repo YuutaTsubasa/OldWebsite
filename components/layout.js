@@ -21,7 +21,7 @@ export default function Layout({children, subURL, communityLinksData}) {
                     name="og:description"
                     content={description}
                 />
-                <meta name="og:url" content={`http://yuuta-tsubasa.studio/${subURL}`} />
+                <meta name="og:url" content={`https://yuuta-tsubasa.studio/${subURL}`} />
                 <meta name="og:image" content="/images/banner.png"/>
             </Head>
             <header className={styles.header}>
