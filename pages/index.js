@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Timeline, Tweet } from 'react-twitter-widgets';
 import Layout, { name, siteTitle } from '../components/layout';
 import YoutubeVideos from '../components/youtubeVideos';
 import styles from './index.module.css';
@@ -32,7 +33,8 @@ export default function Home({ communityLinksData, youtubeVideosData }) {
           </section>
           <section>
             <div className={styles.name}>
-              <h1>{name}</h1><h4><a href="https://twitter.com/YuutaTsubasa/status/1418251268846276608" target="_blank">詳細介紹</a></h4>
+              <h1>{name}</h1>
+              <h4><a href="https://twitter.com/YuutaTsubasa/status/1418251268846276608" target="_blank">詳細介紹</a></h4>
             </div>
             <div>
               為台灣個人勢Vtuber、盔甲正太系程式 Vtuber，語言主要以中文為主，直播內容以程式、唱歌、遊戲、雜談為主。
@@ -44,9 +46,16 @@ export default function Home({ communityLinksData, youtubeVideosData }) {
         <hr />
         <section className={styles.news}>
           <YoutubeVideos youtubeVideosData={youtubeVideosData}/>
-          <section 
-            className={styles.twitter}
-            dangerouslySetInnerHTML={ { __html: `<a class="twitter-timeline" data-lang="zh-tw" data-height="800" data-dnt="true" data-theme="light" href="https://twitter.com/YuutaTsubasa?ref_src=twsrc%5Etfw">Tweets by YuutaTsubasa</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`}}/>
+          <section className={styles.twitter}>
+            <Timeline
+              dataSource={{
+                sourceType: 'profile',
+                screenName: 'YuutaTsubasa'
+              }}
+              options={{
+                height: 800
+              }} />
+          </section>
         </section>
       </section>
     </Layout>

@@ -8,7 +8,6 @@ import {
   YOUTUBE_VIDEOS_DATA_FILE_NAME, 
   WEEK_GALLERY_DATA_FILE_NAME } from '../lib/yamlDataLoader';
 import Gallery from '../components/gallery';
-import HistoryArticle from '../components/contentArticle';
 
 export async function getStaticProps() {
   const communityLinksData = loadYamlData(COMMUNITIES_DATA_FILE_NAME);

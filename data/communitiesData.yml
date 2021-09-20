@@ -11,6 +11,10 @@
   url: http://yutaii.run/facebook
   fontawesome: fab fa-facebook
 -
+  name: Discord
+  url: http://yutaii.run/discord
+  fontawesome: fab fa-discord
+-
   name: GitHub
   url: http://yutaii.run/github
   fontawesome: fab fa-github

@@ -14,7 +14,6 @@
     justify-content: center;
     align-items: center;
     box-shadow: 5px 5px 15px black;
-    border: 5px solid black;
     border-radius: 20px 20px 20px 20px;
     
 }
@@ -30,11 +29,12 @@
 .borderCircle {
     width: 85%;
     border-radius: 100%;
+    margin: 0 auto;
 }
 
 .twitter {
     width: 85%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .news {
@@ -45,7 +45,12 @@
 }
 
 @media screen and (max-width: 800px) {
-    .news {
+    .selfIntroduction, .news {
         grid-template-columns: 1fr;
+    }
+
+    .name h1, .name h4 {
+        display: block;
+        text-align: center;
     }
 }
