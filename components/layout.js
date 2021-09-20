@@ -13,15 +13,15 @@ export default function Layout({children, communityLinksData}) {
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="/fontawesome/css/all.css" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@YuutaTsubasa"/>
+                <meta name="twitter:creator" content="@YuutaTsubasa"/>
+                <meta name="og:title" content={siteTitle} />
                 <meta 
-                    name="description"
+                    name="og:description"
                     content={description}
                 />
-                <meta name="og:title" content={siteTitle} />
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content={siteTitle} />
-                <meta name="twitter:description" content={description} />
-                <meta name="twitter:image" content="/images/banner.png"/>
+                <meta name="og:image" content="/images/banner.png"/>
             </Head>
             <header className={styles.header}>
                 <CommunityLinks communityLinksData={communityLinksData}/>
