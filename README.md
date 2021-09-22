@@ -1,6 +1,6 @@
 # 悠太翼官方網站
 
-![website.png]](website.png)
+![website.png](website.png)
 
 悠太翼官方網站的程式專案保管處與架設處。
 
@@ -10,16 +10,15 @@
 
 ## 使用技術
 - [npm](https://www.electronjs.org/)
-- "bootstrap": "^5.0.0-beta3",
-    "date-fns": "^2.23.0",
-    "gray-matter": "^4.0.3",
-    "js-yaml": "^4.1.0",
-    "next": "^11.0.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-twitter-widgets": "^1.10.0",
-    "remark": "^13.0.0",
-    "remark-html": "^13.0.1"
+- [date-fns](https://date-fns.org/)
+- [gray-matter](https://github.com/jonschlinkert/gray-matter)
+- [js-yaml](https://github.com/nodeca/js-yaml)
+- [next](https://github.com/nodeca/js-yaml)
+- [react](https://zh-hant.reactjs.org/)
+- [react-dom](https://zh-hant.reactjs.org/docs/react-dom.html)
+- [react-twitter-widgets](https://github.com/andrewsuzuki/react-twitter-widgets)
+- [remark](https://github.com/remarkjs/remark/)
+- [remark-html](https://github.com/remarkjs/remark-html)
 
 ## 作者
 - [悠太翼 @YuutaTsubasa](http://yutaii.run/twitter)
