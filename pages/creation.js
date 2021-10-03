@@ -45,7 +45,7 @@ export default function Creation({
         <title>{`${siteTitle}：翼友與協助者`}</title>
       </Head>
       <section className={styles.mainContent}>
-        <ContentArticle title="活動收集處（點擊可至原活動連結）">
+        <ContentArticle title="活動收集處（點擊可至活動參與連結）">
             <Gallery dataList={activityGalleryData} />
         </ContentArticle>
         <ContentArticle title="【#悠然翼繪】收集處（點擊可至原推文處）">

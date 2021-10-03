@@ -28,7 +28,7 @@ function getAuthors(authors) {
 function getTags(tags) {
     return (<div><i className={`fas fa-tags ${style.icon}`}></i>
         {tags
-            .map(tag => (<a href={`https://twitter.com/hashtag/${tag}`} target="_blank">{tag}</a>))
-            .reduce((previous, current) => [previous, current])}
+            .map(tag => (<a href={`https://twitter.com/hashtag/${tag}`} target="_blank">{`#${tag}`}</a>))
+            .reduce((previous, current) => [previous, "、", current])}
         </div>)
 }

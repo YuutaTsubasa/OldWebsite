@@ -1,20 +1,22 @@
 -
   image: "/images/arts/activity/02.png"
   date: "2021/10/03"
+  title: "〈台V手寫換換愛〉交換日記"
   authors: 
     -
       name: "林美靜"
       url: "https://twitter.com/hayashimishizu"
   url: "https://twitter.com/YuutaTsubasa/status/1444482337811714052"
   tags: 
-    - "#台V交換日記"
+    - "台V交換日記"
 -
   image: "/images/arts/activity/01.png"
   date: "2021/09/29"
+  title: "SSR 角色卡"
   authors: 
     -
       name: "Zero0"
       url: "https://twitter.com/abs4d231_035"
   url: "https://twitter.com/YuutaTsubasa/status/1442921474222788615"
   tags: 
-    - "#SSRVT"
+    - "SSRVT"
