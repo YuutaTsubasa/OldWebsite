@@ -8,7 +8,8 @@ import {
   YU_FRIENDS_ART_GALLERY_DATA_FILE_NAME,
   YU_PAID_ART_GALLERY_DATA_FILE_NAME,
   MARSHMALLOW_GALLERY_DATA_FILE_NAME,
-  ECPAY_GALLERY_DATA_FILE_NAME } from '../lib/yamlDataLoader';
+  ECPAY_GALLERY_DATA_FILE_NAME,
+  ACTIVITY_GALLERY_DATA_FILE_NAME } from '../lib/yamlDataLoader';
 import Gallery from '../components/gallery';
 
 export async function getStaticProps() {
@@ -17,6 +18,7 @@ export async function getStaticProps() {
   const yuPaidArtGalleryData = loadYamlData(YU_PAID_ART_GALLERY_DATA_FILE_NAME);
   const marshmallowGalleryData = loadYamlData(MARSHMALLOW_GALLERY_DATA_FILE_NAME);
   const ecpayGalleryData = loadYamlData(ECPAY_GALLERY_DATA_FILE_NAME);
+  const activityGalleryData = loadYamlData(ACTIVITY_GALLERY_DATA_FILE_NAME);
   
   return {
     props: {
@@ -24,7 +26,8 @@ export async function getStaticProps() {
       yuFriendsArtGalleryData,
       yuPaidArtGalleryData,
       marshmallowGalleryData,
-      ecpayGalleryData
+      ecpayGalleryData,
+      activityGalleryData
     }
   }
 }
@@ -34,13 +37,17 @@ export default function Creation({
   yuFriendsArtGalleryData,
   yuPaidArtGalleryData,
   marshmallowGalleryData,
-  ecpayGalleryData}) {
+  ecpayGalleryData,
+  activityGalleryData}) {
   return (
     <Layout communityLinksData={communityLinksData} subURL="creation">
       <Head>
         <title>{`${siteTitle}：翼友與協助者`}</title>
       </Head>
       <section className={styles.mainContent}>
+        <ContentArticle title="活動收集處（點擊可至原活動連結）">
+            <Gallery dataList={activityGalleryData} />
+        </ContentArticle>
         <ContentArticle title="【#悠然翼繪】收集處（點擊可至原推文處）">
             <Gallery dataList={yuFriendsArtGalleryData} />
         </ContentArticle>

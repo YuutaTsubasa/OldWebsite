@@ -1,24 +1,42 @@
 -
   image: "/images/arts/ecpay/06.png"
-  title: "sandwitch的訊息"
+  date: "2021/09/28"
+  authors: 
+    -
+      name: "sandwitch"
   url: "https://yutaii.run/live/26?t=6023"
 -
   image: "/images/arts/ecpay/05.png"
-  title: "Kitsune皓的訊息"
+  date: "2021/09/22"
+  authors: 
+    -
+      name: "Kitsune皓"
   url: "https://yutaii.run/live/24?t=9168"
 -
   image: "/images/arts/ecpay/04.png"
-  title: "雷克斯的訊息"
+  date: "2021/09/21"
+  authors: 
+    -
+      name: "雷克斯"
   url: "https://yutaii.run/live/22?t=13499"
 -
   image: "/images/arts/ecpay/03.png"
-  title: "札末的訊息"
+  date: "2021/09/21"
+  authors: 
+    -
+      name: "札末"
   url: "https://yutaii.run/live/22?t=13479"
 -
   image: "/images/arts/ecpay/02.png"
-  title: "E的訊息"
+  date: "2021/09/09"
+  authors: 
+    -
+      name: "E"
   url: "https://yutaii.run/live/18?t=8590"
 -
   image: "/images/arts/ecpay/01.png"
-  title: "Kitsune皓的訊息"
+  date: "2021/09/07"
+  authors: 
+    -
+      name: "Kitsune皓"
   url: "https://yutaii.run/live/17?t=7139"

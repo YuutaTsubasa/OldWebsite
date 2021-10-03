@@ -1,8 +1,24 @@
 -
+  image: "images/arts/paid/03.png"
+  date: "2021/10/03"
+  authors:
+    -
+      name: "白蛇梅伊 @Wander2_Meii"
+      url: "https://twitter.com/Wander2_Meii"
+  url: "https://twitter.com/Wander2_Meii"
+-
   image: "images/arts/paid/02.png"
-  title: "繪者：猫島羽依 @NekosimaYui"
+  date: "2021/09/14"
+  authors:
+    -
+      name: "猫島羽依 @NekosimaYui"
+      url: "https://twitter.com/NekosimaYui"
   url: "https://twitter.com/NekosimaYui"
 -
   image: "images/arts/paid/01.png"
-  title: "繪者：猫島羽依 @NekosimaYui"
+  date: "2021/06/21"
+  authors:
+    -
+      name: "猫島羽依 @NekosimaYui"
+      url: "https://twitter.com/NekosimaYui"
   url: "https://twitter.com/NekosimaYui"

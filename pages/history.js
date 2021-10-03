@@ -52,7 +52,9 @@ function GetGalleryData(youtubeVideosData, regexp, imageBase, urlBase) {
           return {
               image: `/images/thumbnails/${imageBase}${result[1]}.png`,
               title: video.name,
-              url: `https://yutaii.run/${urlBase}${result[1]}`
+              url: `https://yutaii.run/${urlBase}${result[1]}`,
+              date: video.date,
+              authors: video.authors
           };
       });
 }
