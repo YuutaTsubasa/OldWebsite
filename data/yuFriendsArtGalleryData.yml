@@ -1,4 +1,12 @@
 -
+  image: "images/arts/fans/07.jpg"
+  date: "2021/10/08"
+  authors:
+    -
+      name: "篁"
+      url: "https://twitter.com/sss094dog"
+  url: "https://twitter.com/sss094dog/status/1446166142691647498"
+-
   image: "images/arts/fans/06.jpg"
   date: "2021/09/23"
   authors:
