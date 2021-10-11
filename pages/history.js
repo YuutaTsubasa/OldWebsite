@@ -13,16 +13,11 @@ export async function getStaticProps() {
   const communityLinksData = loadYamlData(COMMUNITIES_DATA_FILE_NAME);
   const youtubeVideosData = loadYamlData(YOUTUBE_VIDEOS_DATA_FILE_NAME);
   const weekGalleryData = loadYamlData(WEEK_GALLERY_DATA_FILE_NAME);
-  const plannedGalleryData = GetGalleryData(
+  const archivedStreamingsData = GetGalleryData(
     youtubeVideosData, 
-    PLANNED_VIDEO_NAME_REGEXP,
-    "live/live",
-    "live/");
-  const unplannedGalleryData = GetGalleryData(
-    youtubeVideosData, 
-    UNPLANNED_VIDEO_NAME_REGEXP,
-    "otherlive/otherlive",
-    "live/unplanned/");
+    VIDEO_NAME_REGEXP,
+    "video/",
+    "v/");
   const toolGalleryData = GetGalleryData(
     youtubeVideosData,
     TOOL_VIDEO_NAME_REGEXP,
@@ -32,16 +27,14 @@ export async function getStaticProps() {
   return {
     props: {
       communityLinksData,
-      plannedGalleryData,
-      unplannedGalleryData,
+      archivedStreamingsData,
       toolGalleryData,
       weekGalleryData
     }
   }
 }
 
-const PLANNED_VIDEO_NAME_REGEXP = /.+No\. ([0-9]+)\:.+/;
-const UNPLANNED_VIDEO_NAME_REGEXP = /.+突發 ([0-9]+)\:.+/;
+const VIDEO_NAME_REGEXP = /.+Vol\. ([0-9]+)\:.+/;
 const TOOL_VIDEO_NAME_REGEXP = /.+悠太工作坊.+\#([0-9]+).+/;
 
 function GetGalleryData(youtubeVideosData, regexp, imageBase, urlBase) {
@@ -61,8 +54,7 @@ function GetGalleryData(youtubeVideosData, regexp, imageBase, urlBase) {
 
 export default function History({
   communityLinksData,
-  plannedGalleryData,
-  unplannedGalleryData,
+  archivedStreamingsData,
   toolGalleryData,
   weekGalleryData}) {
   return (
@@ -78,15 +70,12 @@ export default function History({
             <li>2021/08/18: Youtube 300 訂閱達成。</li>
             <li>2021/09/11: 第一次籌備八人大型連動直播《猫島家族大連動》。</li>
             <li>2021/09/17: Youtube 400 訂閱達成。</li>
+            <li>2021/10/10: Youtube 500 訂閱達成，開始展開《500 訂閱大調整》計畫。</li>
           </ul>
         </ContentArticle>
 
-        <ContentArticle title="歷來預定直播（URL: live/編號）">
-          <Gallery dataList={plannedGalleryData} />
-        </ContentArticle>
-
-        <ContentArticle title="歷來突發直播（URL: unplanned/live/編號）">
-          <Gallery dataList={unplannedGalleryData} />
+        <ContentArticle title="歷來直播（URL: v/編號）">
+          <Gallery dataList={archivedStreamingsData} />
         </ContentArticle>
 
         <ContentArticle title="歷來工具介紹影片（URL: tool/編號）">
