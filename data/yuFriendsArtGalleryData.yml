@@ -1,4 +1,12 @@
 -
+  image: "images/arts/fans/08.jpg"
+  date: "2021/10/08"
+  authors:
+    -
+      name: "CC"
+      url: "https://twitter.com/etcelebi"
+  url: "https://twitter.com/etcelebi/status/1446350461469020162"
+-
   image: "images/arts/fans/07.jpg"
   date: "2021/10/08"
   authors:
