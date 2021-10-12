@@ -45,14 +45,14 @@ export default function Creation({
         <title>{`${siteTitle}：翼友與協助者`}</title>
       </Head>
       <section className={styles.mainContent}>
-        <ContentArticle title="活動收集處（點擊可至活動參與連結）">
-            <Gallery dataList={activityGalleryData} />
-        </ContentArticle>
         <ContentArticle title="【#悠然翼繪】收集處（點擊可至原推文處）">
-            <Gallery dataList={yuFriendsArtGalleryData} />
+            <Gallery dataList={yuFriendsArtGalleryData} useBigItem={true} />
         </ContentArticle>
         <ContentArticle title="委託圖繪收集處（點擊可至繪師推特）">
-            <Gallery dataList={yuPaidArtGalleryData} />
+            <Gallery dataList={yuPaidArtGalleryData} useBigItem={true} />
+        </ContentArticle>
+        <ContentArticle title="活動收集處（點擊可至活動參與連結）">
+            <Gallery dataList={activityGalleryData} useBigItem={true} />
         </ContentArticle>
         <ContentArticle title="綠界訊息收集處（點擊可至回應的影片時間）">
             <Gallery dataList={ecpayGalleryData} />

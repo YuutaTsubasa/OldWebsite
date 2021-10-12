@@ -75,15 +75,15 @@ export default function History({
         </ContentArticle>
 
         <ContentArticle title="歷來直播（URL: v/編號）">
-          <Gallery dataList={archivedStreamingsData} />
+          <Gallery dataList={archivedStreamingsData} hasDescription={false}/>
         </ContentArticle>
 
         <ContentArticle title="歷來工具介紹影片（URL: tool/編號）">
-          <Gallery dataList={toolGalleryData} />
+          <Gallery dataList={toolGalleryData} hasDescription={false}/>
         </ContentArticle>
 
         <ContentArticle title="歷來直播週表">
-          <Gallery dataList={weekGalleryData}/>
+          <Gallery dataList={weekGalleryData} hasDescription={false}/>
         </ContentArticle>
       </section>
     </Layout>

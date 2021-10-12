@@ -1,12 +1,18 @@
-.galleryList {
+.galleryList, .galleryList2fr {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     margin: 10px auto;
     justify-items: center;
     align-items: flex-start;
 }
 
+.galleryList {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.galleryList2fr {
+    grid-template-columns: 1fr 1fr;
+}
 
 .galleryListItem {
     box-shadow: 10px 8px 15px black;
@@ -46,5 +52,9 @@
 @media screen and (max-width: 800px) {
     .galleryList {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .galleryList2fr {
+        grid-template-columns: 1fr;
     }
 }

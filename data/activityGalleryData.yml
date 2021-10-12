@@ -1,4 +1,15 @@
 -
+  image: "/images/arts/activity/03.png"
+  date: "2021/10/06"
+  title: "Vtuber一問一答自己紹介"
+  authors: 
+    -
+      name: "海月シェル"
+      url: "https://www.youtube.com/channel/UCz1RAeb7dVaUcd-4rEgyxPw"
+  url: "https://youtu.be/wuVr1-kd5xU"
+  tags: 
+    - "Vtuber一問一答自己紹介"
+-
   image: "/images/arts/activity/02.png"
   date: "2021/10/03"
   title: "〈台V手寫換換愛〉交換日記"
