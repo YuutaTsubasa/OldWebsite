@@ -42,7 +42,7 @@ export default function Home({ communityLinksData, youtubeVideosData }) {
           </section>
         </section>
         <hr />
-        <img src="/images/week.png" alt="本週行事曆"/>
+        <a href="https://yutaii.run/youtube" target="_blank"><img src="/images/week.png" alt="本週行事曆"/></a>
         <hr />
         <section className={styles.news}>
           <YoutubeVideos youtubeVideosData={youtubeVideosData}/>
