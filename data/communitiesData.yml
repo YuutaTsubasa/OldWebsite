@@ -23,6 +23,10 @@
   url: http://yutaii.run/instagram
   fontawesome: fab fa-instagram
 -
+  name: Tumblr
+  url: http://yutaii.run/tumblr
+  fontawesome: fab fa-tumblr
+-
   name: Plurk
   url: http://yutaii.run/plurk
   image: /images/plurk.png
