@@ -27,6 +27,10 @@
   url: http://yutaii.run/tumblr
   fontawesome: fab fa-tumblr
 -
+  name: Twitch
+  url: http://yutaii.run/twitch
+  fontawesome: fab fa-twitch
+-
   name: MeWe
   url: http://yutaii.run/mewe
   image: /images/mewe.jpg
