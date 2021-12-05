@@ -1,4 +1,12 @@
 -
+  image: "images/arts/fans/11.jpg"
+  date: "2021/11/30"
+  authors:
+    -
+      name: "Akane kun"
+      url: "https://twitter.com/time_akane"
+  url: "https://twitter.com/time_akane/status/1465587786409385990"
+-
   image: "images/arts/fans/10.jpg"
   date: "2021/11/28"
   authors:
