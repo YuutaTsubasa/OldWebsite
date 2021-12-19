@@ -1,4 +1,12 @@
 -
+  image: "images/arts/paid/04.jpg"
+  date: "2021/12/17"
+  authors:
+    -
+      name: "野雲"
+      url: "https://twitter.com/Wild_Cloud_Art"
+  url: "https://twitter.com/Wild_Cloud_Art"
+-
   image: "images/arts/paid/03.png"
   date: "2021/10/03"
   authors:
