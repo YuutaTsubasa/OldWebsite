@@ -73,6 +73,7 @@ export default function History({
             <li>2021/10/10: Youtube 500 訂閱達成，開始展開《500 訂閱大調整》計畫。</li>
             <li>2021/10/20: Youtube 社群功能開放、Instagram 與 Plurk 社群啟動。</li>
             <li>2021/10/31: Youtube 600 訂閱達成。</li>
+            <li>2021/12/19: Youtube 700 訂閱達成。</li>
           </ul>
         </ContentArticle>
 
