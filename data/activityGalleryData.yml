@@ -1,14 +1,26 @@
 -
-  image: "/images/arts/activity/03.png"
-  date: "2021/10/06"
-  title: "Vtuber一問一答自己紹介"
+  image: "/images/arts/activity/05.jpg"
+  date: "2021/12/31"
+  title: "【歌ってみた】打上花火 - DAOKO × 米津玄師 Covered by 小森未央 & @Yuuta Ch. 悠太翼"
   authors: 
     -
-      name: "海月シェル"
-      url: "https://www.youtube.com/channel/UCz1RAeb7dVaUcd-4rEgyxPw"
-  url: "https://youtu.be/wuVr1-kd5xU"
+      name: "小森未央"
+      url: "https://www.youtube.com/channel/UCpsElpnUji_pEVp8_Mo82YA"
+  url: "https://youtu.be/aH_KDcirgnw"
   tags: 
-    - "Vtuber一問一答自己紹介"
+    - "2021華語VTuber紅白綜藝秀"
+    - "Cover"
+-
+  image: "/images/arts/activity/04.png"
+  date: "2021/11/14"
+  title: "【#Vtuber第二專長企劃/#活動】悠太翼的一日燈光師篇"
+  authors: 
+    -
+      name: "VPS製幻工作室-Virtual Producing Studio"
+      url: "https://www.youtube.com/channel/UC-2U-p3ZQ3P9c-jkre8wF3g"
+  url: "https://youtu.be/aH_KDcirgnw"
+  tags: 
+    - "Vtuber第二專長企劃"
 -
   image: "/images/arts/activity/02.png"
   date: "2021/10/03"

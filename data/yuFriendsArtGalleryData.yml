@@ -1,4 +1,20 @@
 -
+  image: "images/arts/fans/13.jpg"
+  date: "2022/01/03"
+  authors:
+    -
+      name: "诗婷（渣渣）"
+      url: "https://twitter.com/zhazha0112"
+  url: "https://twitter.com/zhazha0112/status/1477995240870932480"
+-
+  image: "images/arts/fans/12.jpg"
+  date: "2021/12/21"
+  authors:
+    -
+      name: "きつね皓"
+      url: "https://twitter.com/sUKFXoaNtGPbXPK"
+  url: "https://twitter.com/sUKFXoaNtGPbXPK/status/1473207751753203716"
+-
   image: "images/arts/fans/11.jpg"
   date: "2021/11/30"
   authors:

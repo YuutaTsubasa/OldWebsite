@@ -1,4 +1,12 @@
 -
+  image: "images/arts/paid/05.jpg"
+  date: "2021/12/31"
+  authors:
+    -
+      name: "猫島羽依"
+      url: "https://twitter.com/NekosimaYui"
+  url: "https://twitter.com/NekosimaYui"
+-
   image: "images/arts/paid/04.jpg"
   date: "2021/12/17"
   authors:
