@@ -9,6 +9,7 @@ import {
   YU_PAID_ART_GALLERY_DATA_FILE_NAME,
   MARSHMALLOW_GALLERY_DATA_FILE_NAME,
   ECPAY_GALLERY_DATA_FILE_NAME,
+  OPAY_GALLERY_DATA_FILE_NAME,
   ACTIVITY_GALLERY_DATA_FILE_NAME } from '../lib/yamlDataLoader';
 import Gallery from '../components/gallery';
 
@@ -18,6 +19,7 @@ export async function getStaticProps() {
   const yuPaidArtGalleryData = loadYamlData(YU_PAID_ART_GALLERY_DATA_FILE_NAME);
   const marshmallowGalleryData = loadYamlData(MARSHMALLOW_GALLERY_DATA_FILE_NAME);
   const ecpayGalleryData = loadYamlData(ECPAY_GALLERY_DATA_FILE_NAME);
+  const opayGalleryData = loadYamlData(OPAY_GALLERY_DATA_FILE_NAME);
   const activityGalleryData = loadYamlData(ACTIVITY_GALLERY_DATA_FILE_NAME);
   
   return {
@@ -27,6 +29,7 @@ export async function getStaticProps() {
       yuPaidArtGalleryData,
       marshmallowGalleryData,
       ecpayGalleryData,
+      opayGalleryData,
       activityGalleryData
     }
   }
@@ -38,6 +41,7 @@ export default function Creation({
   yuPaidArtGalleryData,
   marshmallowGalleryData,
   ecpayGalleryData,
+  opayGalleryData,
   activityGalleryData}) {
   return (
     <Layout communityLinksData={communityLinksData} subURL="creation">
@@ -56,6 +60,9 @@ export default function Creation({
         </ContentArticle>
         <ContentArticle title="綠界訊息收集處（點擊可至回應的影片時間）">
             <Gallery dataList={ecpayGalleryData} />
+        </ContentArticle>
+        <ContentArticle title="歐付寶訊息收集處（點擊可至回應的影片時間）">
+            <Gallery dataList={opayGalleryData} />
         </ContentArticle>
         <ContentArticle title="棉花糖收集處（點擊可至回應的影片時間）">
             <Gallery dataList={marshmallowGalleryData} />
