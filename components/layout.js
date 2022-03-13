@@ -31,7 +31,7 @@ export default function Layout({children, subURL, title, communityLinksData}) {
             {(subURL == "") ? (<header>
                 <video src="videos/background.mp4" muted autoPlay loop></video>
                 <div className={styles.flex}>
-                    <img src="images/logo.png" alt="Logo" className={styles.logo25} />
+                    <img src="images/logo.png" alt="Logo" className={styles.mainLogo} />
                 </div>
             </header>) : (<header className={styles.notFull}></header>)}
             <Navigator/>

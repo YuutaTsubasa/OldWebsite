@@ -14,8 +14,9 @@
     position: absolute;
     min-width: 100vw;
     min-height: 100vh;
+    left: 50%;
     bottom: 0;
-    right: 0;
+    transform: translateX(-50%);
 }
 
 .layout header .flex {
@@ -32,8 +33,26 @@
     flex-direction: column;
 }
 
-.layout .logo25 {
-    height: 25%;
+.layout .mainLogo {
+    max-height: 25%;
+    max-width: 50%;
+    width: auto;
+    height: auto;
+    animation-duration: 2s;
+    animation-name: logoEnter;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@keyframes logoEnter {
+    from {
+        margin-bottom: -50px;
+        opacity: 0;
+    }
+
+    to {
+        margin-bottom: 0;
+        opacity: 1;
+    }
 }
 
 .layout .logo75 {

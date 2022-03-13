@@ -4,7 +4,9 @@ import Link from 'next/link';
 export default function Navigator() {
     return (<nav className={styles.navigator}>
         <div className={styles.leftGroup}>
-            <img src="images/logo.png" alt="Logo" className={styles.logo75} />
+            <Link href="/">
+                <img src="images/logo.png" alt="Logo" className={styles.logo75} />
+            </Link>
         </div>
         <div className={styles.rightGroup}>
             <button onClick={OpenNav}><i className="fas fa-bars"></i></button>
@@ -23,7 +25,9 @@ function OpenNav(){
     navList.classList.add(styles["display-flex"]);
 }
 
-function CloseNav(){
+function CloseNav(event){
+    event.preventDefault();
+    event.stopPropagation();
     let navList = document.querySelector("#navList");
     navList.classList.remove(styles["display-flex"]);
 }

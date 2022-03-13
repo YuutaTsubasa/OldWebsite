@@ -27,7 +27,12 @@ nav.navigator .leftGroup {
     display: flex;
     align-items: center;
     height: 100%;
-    margin-left: 50px;
+    margin-left: 20px;
+    transition: opacity 0.5s;
+}
+
+nav.navigator .leftGroup:hover {
+    opacity: 0.5;
 }
 
 nav.navigator .rightGroup {
@@ -41,6 +46,7 @@ nav.navigator .rightGroup button {
     height: 50px;
     margin-top: 15px;
     margin-right: 20px;
+    padding: 0;
     background-color: transparent;
     border: 3px solid white;
     font-size: x-large;
