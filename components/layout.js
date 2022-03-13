@@ -9,12 +9,15 @@ const description = `${name} 官方網站`;
 const baseURL = "https://yuuta-tsubasa.studio";
 const imageURL = `${baseURL}/images/banner.png`;
 
-export default function Layout({children, subURL, communityLinksData}) {
+export default function Layout({children, subURL, title, communityLinksData}) {
     return (
-        <div className={styles.container}>
+        <div className={styles.layout}>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="/fontawesome/css/all.css" />
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@800&family=Noto+Sans+SC:wght@500&family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@YuutaTsubasa"/>
                 <meta name="twitter:creator" content="@YuutaTsubasa"/>
@@ -23,15 +26,26 @@ export default function Layout({children, subURL, communityLinksData}) {
                 <meta property="og:url" content={`${baseURL}/${subURL}`} />
                 <meta property="og:image" content={imageURL}/>
                 <meta name="twitter:image" content={imageURL}/>
+                <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
             </Head>
-            <header className={styles.header}>
+            {(subURL == "") ? (<header>
+                <video src="videos/background.mp4" muted autoPlay loop></video>
+                <div className={styles.flex}>
+                    <img src="images/logo.png" alt="Logo" className={styles.logo25} />
+                </div>
+            </header>) : (<header className={styles.notFull}></header>)}
+            <Navigator/>
+            <main>
+                <section>
+                    {title && (<h1>{title}</h1>)}
+                    <hr />
+                    {children}
+                </section>
+            </main>
+            <footer>
+                <img src="images/logo.png" alt="Logo" className={styles.logo100px}/><br/>
                 <CommunityLinks communityLinksData={communityLinksData}/>
-                <div className={styles.banner}></div>
-                <Navigator/>
-            </header>
-            <main>{children}</main>
-            <footer className={styles.footer}>
-                <img src="/images/logo.png" alt="悠太翼"/>
+                Copyright by 悠太翼 Yuuta Tsubasa
             </footer>
         </div>
     );

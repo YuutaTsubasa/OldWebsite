@@ -4,10 +4,11 @@
 }
 
 .communityLinks ul {
+    margin: 0;
+    padding: 0;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     column-gap: 1rem;
 }
@@ -16,4 +17,8 @@
     list-style: none;
     width: 1.5rem;
     font-size: 1.5rem;
+}
+
+.communityLinks ul li img{
+    width: 100%;
 }

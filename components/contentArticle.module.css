@@ -1,6 +1,10 @@
 .header {
     text-align: center;
-    text-shadow: 
-    white 0px 0px 10px,   white 0px 0px 10px,   white 0px 0px 10px,
-    white 0px 0px 10px,   white 0px 0px 10px,   white 0px 0px 10px;
+    text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+    color: black;
+}
+
+article.box {
+    margin: 10px auto;
+    width: 80%;
 }

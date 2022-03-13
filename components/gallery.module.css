@@ -14,12 +14,6 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.galleryListItem {
-    box-shadow: 10px 8px 15px black;
-    border-radius: 0px 0px 15px 15px;
-    background-color: rgba(255, 255, 255, 0.6);
-}
-
 .galleryListItem img{
     width: 100%;
 }
@@ -30,19 +24,35 @@
     padding-bottom: 5px;
 }
 
-.galleryListItem .description h4 {
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
 .galleryListItem .description > * {
     margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .galleryListItem .description div {
     font-size: medium;
+}
+
+.galleryListItem .description h4{
+    font-size: large;
+}
+
+.galleryListItem div a {
+    color: rgb(95, 170, 255);
+}
+
+.galleryListItem div a:hover {
+    color: white;
+}
+
+.galleryListItem h4 a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.galleryListItem h4 a:hover {
+    color: yellow;
 }
 
 .icon {

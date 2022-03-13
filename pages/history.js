@@ -58,7 +58,7 @@ export default function History({
   toolGalleryData,
   weekGalleryData}) {
   return (
-    <Layout communityLinksData={communityLinksData} subURL="history">
+    <Layout communityLinksData={communityLinksData} subURL="history" title="HISTORY">
       <Head>
         <title>{`${siteTitle}：歷史紀錄`}</title>
       </Head>
@@ -74,19 +74,22 @@ export default function History({
             <li>2021/10/20: Youtube 社群功能開放、Instagram 與 Plurk 社群啟動。</li>
             <li>2021/10/31: Youtube 600 訂閱達成。</li>
             <li>2021/12/19: Youtube 700 訂閱達成。</li>
+            <li>2022/01/13: Youtube 800 訂閱達成。</li>
+            <li>2022/02/25: Youtube 900 訂閱達成。</li>
+            <li>2022/03/13: 網站新樣式釋出。（預計會再調整內容顯示的方法）</li>
           </ul>
         </ContentArticle>
 
         <ContentArticle title="歷來直播（URL: v/編號）">
-          <Gallery dataList={archivedStreamingsData} hasDescription={false}/>
+          <Gallery dataList={archivedStreamingsData}/>
         </ContentArticle>
 
         <ContentArticle title="歷來工具介紹影片（URL: tool/編號）">
-          <Gallery dataList={toolGalleryData} hasDescription={false}/>
+          <Gallery dataList={toolGalleryData}/>
         </ContentArticle>
 
         <ContentArticle title="歷來直播週表">
-          <Gallery dataList={weekGalleryData} hasDescription={false}/>
+          <Gallery dataList={weekGalleryData}/>
         </ContentArticle>
       </section>
     </Layout>

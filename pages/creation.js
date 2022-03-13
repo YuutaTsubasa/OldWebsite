@@ -44,7 +44,7 @@ export default function Creation({
   opayGalleryData,
   activityGalleryData}) {
   return (
-    <Layout communityLinksData={communityLinksData} subURL="creation">
+    <Layout communityLinksData={communityLinksData} subURL="creation" title="FANS' ART">
       <Head>
         <title>{`${siteTitle}：翼友與協助者`}</title>
       </Head>

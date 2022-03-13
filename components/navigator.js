@@ -1,24 +1,29 @@
-import style from './navigator.module.css';
+import styles from './navigator.module.css';
 import Link from 'next/link';
 
 export default function Navigator() {
-    return (<nav className={style.navbar}>
-        <ul className={style.navBarList}>
-            <li className={style.navBarListItem}>
-                <Link href="/">
-                    <a className={style.navBarLink}>主頁</a>
-                </Link>
-            </li>
-            <li className={style.navBarListItem}>
-                <Link href="/history">
-                    <a className={style.navBarLink}>歷史紀錄</a>
-                </Link>
-            </li>
-            <li className={style.navBarListItem}>
-                <Link href="/creation">
-                    <a className={style.navBarLink}>翼友與協助者</a>
-                </Link>
-            </li>
-        </ul>
+    return (<nav className={styles.navigator}>
+        <div className={styles.leftGroup}>
+            <img src="images/logo.png" alt="Logo" className={styles.logo75} />
+        </div>
+        <div className={styles.rightGroup}>
+            <button onClick={OpenNav}><i className="fas fa-bars"></i></button>
+            <ul id="navList">
+                <li><Link href="/">MAIN</Link></li>
+                <li><Link href="/history">HISTORY</Link></li>
+                <li><Link href="/creation">FANS' ART</Link></li>
+                <li className={styles.close} onClick={CloseNav}><a href="#">CLOSE</a></li>
+            </ul>
+        </div>
     </nav>);
+}
+
+function OpenNav(){
+    let navList = document.querySelector("#navList");
+    navList.classList.add(styles["display-flex"]);
+}
+
+function CloseNav(){
+    let navList = document.querySelector("#navList");
+    navList.classList.remove(styles["display-flex"]);
 }
