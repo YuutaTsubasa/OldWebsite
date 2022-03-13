@@ -20,9 +20,9 @@ export default function Navigator({subURL}) {
                 {
                     PAGES.map(data => (
                         <li onClick={(data.url === `/${subURL}`) ? CloseNav : null}>
-                            <Link href={data.url}>
+                            <a href={data.url}>
                                 {data.title}
-                            </Link>
+                            </a>
                         </li>
                     ))
                 }
