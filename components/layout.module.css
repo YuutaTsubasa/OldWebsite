@@ -66,6 +66,7 @@
 .layout main {
     width: 100%;
     min-height: 100vh;
+    background-color: black;
     background-image: url(/images/background.png);
     background-attachment: fixed;
     background-size: cover;
