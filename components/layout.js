@@ -29,7 +29,7 @@ export default function Layout({children, subURL, title, communityLinksData}) {
                 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
             </Head>
             {(subURL == "") ? (<header>
-                <video src="videos/background.mp4" muted autoPlay loop playsinline></video>
+                <video src="videos/background.mp4" muted autoPlay loop playsInline></video>
                 <div className={styles.flex}>
                     <img src="images/logo.png" alt="Logo" className={styles.mainLogo} />
                 </div>
