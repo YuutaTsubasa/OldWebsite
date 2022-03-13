@@ -12,21 +12,7 @@
     margin: 10px auto;
 }
 
-.news {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
 @media screen and (max-width: 1000px) {
-    .selfIntroduction, .news {
-        grid-template-columns: 1fr;
-    }
-
-    .name h1, .name h4 {
-        display: block;
-        text-align: center;
-    }
-    
     .youtube {
         display: block;
         margin: 0 auto;
