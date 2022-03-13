@@ -1,7 +1,13 @@
 import styles from './navigator.module.css';
 import Link from 'next/link';
 
-export default function Navigator() {
+const PAGES = [
+    {url: "/", title: "MAIN"},
+    {url: "/history", title: "HISTORY"},
+    {url: "/creation", title: "FANS' ART"},
+];
+
+export default function Navigator({subURL}) {
     return (<nav className={styles.navigator}>
         <div className={styles.leftGroup}>
             <Link href="/">
@@ -11,9 +17,15 @@ export default function Navigator() {
         <div className={styles.rightGroup}>
             <button onClick={OpenNav}><i className="fas fa-bars"></i></button>
             <ul id="navList">
-                <li><Link href="/">MAIN</Link></li>
-                <li><Link href="/history">HISTORY</Link></li>
-                <li><Link href="/creation">FANS' ART</Link></li>
+                {
+                    PAGES.map(data => (
+                        <li onClick={(data.url === `/${subURL}`) ? CloseNav : null}>
+                            <Link href={data.url}>
+                                {data.title}
+                            </Link>
+                        </li>
+                    ))
+                }
                 <li className={styles.close} onClick={CloseNav}><a href="#">CLOSE</a></li>
             </ul>
         </div>
@@ -28,6 +40,7 @@ function OpenNav(){
 function CloseNav(event){
     event.preventDefault();
     event.stopPropagation();
+
     let navList = document.querySelector("#navList");
     navList.classList.remove(styles["display-flex"]);
 }

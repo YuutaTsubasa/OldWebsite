@@ -34,7 +34,7 @@ export default function Layout({children, subURL, title, communityLinksData}) {
                     <img src="images/logo.png" alt="Logo" className={styles.mainLogo} />
                 </div>
             </header>) : (<header className={styles.notFull}></header>)}
-            <Navigator/>
+            <Navigator subURL={subURL}/>
             <main>
                 <section>
                     {title && (<h1>{title}</h1>)}
