@@ -5,7 +5,6 @@
 .youtube {
     display: block;
     margin: 0 auto;
-    width: 80%;
 }
 
 .twitter {
@@ -26,5 +25,11 @@
     .name h1, .name h4 {
         display: block;
         text-align: center;
+    }
+    
+    .youtube {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
     }
 }
