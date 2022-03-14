@@ -12,11 +12,6 @@ export default function Document() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@YuutaTsubasa"/>
         <meta name="twitter:creator" content="@YuutaTsubasa"/>
-        <meta property="og:title" content={siteTitle} />
-        <meta property="og:description" content={description} />
-        <meta property="og:url" content={`${baseURL}/${subURL}`} />
-        <meta property="og:image" content={imageURL}/>
-        <meta name="twitter:image" content={imageURL}/>
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
     </Head>
       <body>
