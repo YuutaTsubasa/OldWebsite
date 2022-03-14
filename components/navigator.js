@@ -19,7 +19,7 @@ export default function Navigator({subURL}) {
             <ul id="navList">
                 {
                     PAGES.map(data => (
-                        <li onClick={(data.url === `/${subURL}`) ? CloseNav : null}>
+                        <li key={data.url} onClick={(data.url === `/${subURL}`) ? CloseNav : null}>
                             <a href={data.url}>
                                 {data.title}
                             </a>
