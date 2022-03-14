@@ -38,12 +38,14 @@ export default function Home({ communityLinksData }) {
         <iframe className={styles.youtube} width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLHDTW9-5SsB_GEclHq9W6njQjRSCNefEo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </ContentArticle>
       <ContentArticle title="官方 Twitter">
-          {<TwitterTimelineEmbed
-            sourceType='profile'
-            screenName='YuutaTsubasa'
-            options={{
-              height: 800
-            }} />}
+          <div style={{textAlign: 'center'}}>
+            <TwitterTimelineEmbed
+              sourceType='profile'
+              screenName='YuutaTsubasa'
+              options={{
+                height: 800
+              }} />
+          </div>
         </ContentArticle>
     </Layout>
   )
