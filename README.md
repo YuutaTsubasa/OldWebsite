@@ -16,7 +16,7 @@
 - [next](https://github.com/nodeca/js-yaml)
 - [react](https://zh-hant.reactjs.org/)
 - [react-dom](https://zh-hant.reactjs.org/docs/react-dom.html)
-- [react-twitter-widgets](https://github.com/andrewsuzuki/react-twitter-widgets)
+- [react-twitter-embed](https://github.com/saurabhnemade/react-twitter-embed)
 - [remark](https://github.com/remarkjs/remark/)
 - [remark-html](https://github.com/remarkjs/remark-html)
 
