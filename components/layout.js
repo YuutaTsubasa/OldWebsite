@@ -11,6 +11,13 @@ const imageURL = `${baseURL}/images/banner.png`;
 
 export default function Layout({children, subURL, title, communityLinksData}) {
     return (
+        <Head>
+            <meta property="og:title" content={siteTitle} />
+            <meta property="og:description" content={description} />
+            <meta property="og:url" content={`${baseURL}/${subURL}`} />
+            <meta property="og:image" content={imageURL}/>
+            <meta name="twitter:image" content={imageURL}/>
+        </Head>
         <div className={styles.layout}>
             {(subURL == "") ? (<header>
                 <video src="videos/background.mp4" muted autoPlay loop playsInline></video>
