@@ -4,14 +4,14 @@ import Link from 'next/link';
 const PAGES = [
     {url: "/", title: "MAIN"},
     {url: "/history", title: "HISTORY"},
-    {url: "/creation", title: "FANS' ART"},
+    {url: "/friends", title: "FRIENDS"},
 ];
 
 export default function Navigator({subURL}) {
     return (<nav className={styles.navigator}>
         <div className={styles.leftGroup}>
             <Link href="/">
-                <img src="images/logo.png" alt="Logo" className={styles.logo75} />
+                <img src="/images/logo.png" alt="Logo" className={styles.logo75} />
             </Link>
         </div>
         <div className={styles.rightGroup}>

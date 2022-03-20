@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Layout, { name, siteTitle } from '../components/layout';
 import ContentArticle from '../components/contentArticle';
-import styles from './history.module.css';
+import styles from './page.module.css';
 import { 
   loadYamlData, 
   COMMUNITIES_DATA_FILE_NAME, 
@@ -13,22 +13,32 @@ export async function getStaticProps() {
   const communityLinksData = loadYamlData(COMMUNITIES_DATA_FILE_NAME);
   const youtubeVideosData = loadYamlData(YOUTUBE_VIDEOS_DATA_FILE_NAME);
   const weekGalleryData = loadYamlData(WEEK_GALLERY_DATA_FILE_NAME);
-  const archivedStreamingsData = GetGalleryData(
-    youtubeVideosData, 
-    VIDEO_NAME_REGEXP,
-    "video/",
-    "v/");
+  const archivedStreamingsData = GetArchivedStreamingsData(youtubeVideosData);
   const toolGalleryData = GetGalleryData(
     youtubeVideosData,
     TOOL_VIDEO_NAME_REGEXP,
     "tool/tool",
     "tool/");
+  const coverGalleryData = youtubeVideosData
+    .filter(video => video.name.includes("#cover"))
+    .reverse()
+    .map((video, index) => {
+      let number = index + 1;
+      return {
+        image: `/images/thumbnails/cover/${number}.png`,
+        title: video.name,
+        url: `https://yutaii.run/cover/${number}`,
+        date: video.date,
+        authors: video.authors
+    }})
+    .reverse();
 
   return {
     props: {
       communityLinksData,
       archivedStreamingsData,
       toolGalleryData,
+      coverGalleryData,
       weekGalleryData
     }
   }
@@ -36,6 +46,14 @@ export async function getStaticProps() {
 
 const VIDEO_NAME_REGEXP = /.+Vol\. ([0-9]+)\:.+/;
 const TOOL_VIDEO_NAME_REGEXP = /.+悠太工作坊.+\#([0-9]+).+/;
+
+export function GetArchivedStreamingsData(youtubeVideosData){
+  return GetGalleryData(
+    youtubeVideosData, 
+    VIDEO_NAME_REGEXP,
+    "video/",
+    "v/");
+}
 
 function GetGalleryData(youtubeVideosData, regexp, imageBase, urlBase) {
   return youtubeVideosData
@@ -56,6 +74,7 @@ export default function History({
   communityLinksData,
   archivedStreamingsData,
   toolGalleryData,
+  coverGalleryData,
   weekGalleryData}) {
   return (
     <Layout communityLinksData={communityLinksData} subURL="history" title="HISTORY">
@@ -63,29 +82,17 @@ export default function History({
         <title>{`${siteTitle}：歷史紀錄`}</title>
       </Head>
       <section className={styles.mainContent}>
-        <ContentArticle title="歷來大事記" backgroundType="full">
-          <ul>
-            <li>2021/07/31: 初配信，正式活動開始。</li>
-            <li>2021/08/01: Youtube 200 訂閱達成。</li>
-            <li>2021/08/18: Youtube 300 訂閱達成。</li>
-            <li>2021/09/11: 第一次籌備八人大型連動直播《猫島家族大連動》。</li>
-            <li>2021/09/17: Youtube 400 訂閱達成。</li>
-            <li>2021/10/10: Youtube 500 訂閱達成，開始展開《500 訂閱大調整》計畫。</li>
-            <li>2021/10/20: Youtube 社群功能開放、Instagram 與 Plurk 社群啟動。</li>
-            <li>2021/10/31: Youtube 600 訂閱達成。</li>
-            <li>2021/12/19: Youtube 700 訂閱達成。</li>
-            <li>2022/01/13: Youtube 800 訂閱達成。</li>
-            <li>2022/02/25: Youtube 900 訂閱達成。</li>
-            <li>2022/03/13: 網站新樣式釋出。（預計會再調整內容顯示的方法）</li>
-          </ul>
+        <ContentArticle title="近期直播" subTitle="URL: https://yutaii.run/v/編號">
+          <Gallery dataList={archivedStreamingsData.slice(0, 6)}/>
+          <a href="/history/streaming" className={styles.moreContent}>更多內容......</a>
         </ContentArticle>
 
-        <ContentArticle title="歷來直播（URL: v/編號）">
-          <Gallery dataList={archivedStreamingsData}/>
-        </ContentArticle>
-
-        <ContentArticle title="歷來工具介紹影片（URL: tool/編號）">
+        <ContentArticle title="歷來工具介紹影片" subTitle="URL: https://yutaii.run/tool/編號">
           <Gallery dataList={toolGalleryData}/>
+        </ContentArticle>
+
+        <ContentArticle title="歷來翻唱影片"  subTitle="URL: https://yutaii.run/cover/編號">
+          <Gallery dataList={coverGalleryData}/>
         </ContentArticle>
 
         <ContentArticle title="歷來直播週表">

@@ -29,9 +29,9 @@ export default function Layout({children, subURL, title, communityLinksData}) {
                 <meta name="twitter:image" content={imageURL}/>
             </Head>
             {(subURL == "") ? (<header>
-                <video src="videos/background.mp4" muted autoPlay loop playsInline></video>
+                <video src="/videos/background.mp4" muted autoPlay loop playsInline></video>
                 <div className={styles.flex}>
-                    <img src="images/logo.png" alt="Logo" className={styles.mainLogo} />
+                    <img src="/images/logo.png" alt="Logo" className={styles.mainLogo} />
                 </div>
             </header>) : (<header className={styles.notFull}></header>)}
             <Navigator subURL={subURL}/>
@@ -43,7 +43,7 @@ export default function Layout({children, subURL, title, communityLinksData}) {
                 </section>
             </main>
             <footer>
-                <img src="images/logo.png" alt="Logo" className={styles.logo100px}/><br/>
+                <img src="/images/logo.png" alt="Logo" className={styles.logo100px}/><br/>
                 <CommunityLinks communityLinksData={communityLinksData}/>
                 Copyright by 悠太翼 Yuuta Tsubasa
             </footer>

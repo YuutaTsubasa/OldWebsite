@@ -1,0 +1,19 @@
+.mainContent {
+    margin: 10px auto;
+    width: 100%;
+}
+
+a.moreContent {
+    display: block;
+    margin: 20px auto;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    border: 3px solid white;
+}
+
+a.moreContent:hover {
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+}

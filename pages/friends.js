@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Layout, { name, siteTitle } from '../components/layout';
 import ContentArticle from '../components/contentArticle';
-import styles from './history.module.css';
+import styles from './page.module.css';
 import { 
   loadYamlData, 
   COMMUNITIES_DATA_FILE_NAME, 
@@ -35,7 +35,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Creation({
+export default function Friends({
   communityLinksData,
   yuFriendsArtGalleryData,
   yuPaidArtGalleryData,
@@ -44,28 +44,32 @@ export default function Creation({
   opayGalleryData,
   activityGalleryData}) {
   return (
-    <Layout communityLinksData={communityLinksData} subURL="creation" title="FANS' ART">
+    <Layout communityLinksData={communityLinksData} subURL="friends" title="FRIENDS">
       <Head>
         <title>{`${siteTitle}：翼友與協助者`}</title>
       </Head>
       <section className={styles.mainContent}>
-        <ContentArticle title="【#悠然翼繪】收集處（點擊可至原推文處）">
-            <Gallery dataList={yuFriendsArtGalleryData} useBigItem={true} />
+        <ContentArticle title="近期【#悠然翼繪】收集處" subTitle="點擊可至原推文處">
+            <Gallery dataList={yuFriendsArtGalleryData.slice(0, 6)} useBigItem={true} />
+            <a href="/friends/fanarts" className={styles.moreContent}>更多內容......</a>
         </ContentArticle>
-        <ContentArticle title="委託圖繪收集處（點擊可至繪師推特）">
+        <ContentArticle title="委託圖繪收集處" subTitle="點擊可至繪師推特">
             <Gallery dataList={yuPaidArtGalleryData} useBigItem={true} />
         </ContentArticle>
-        <ContentArticle title="活動收集處（點擊可至活動參與連結）">
+        <ContentArticle title="活動收集處" subTitle="點擊可至活動參與連結">
             <Gallery dataList={activityGalleryData} useBigItem={true} />
         </ContentArticle>
-        <ContentArticle title="綠界訊息收集處（點擊可至回應的影片時間）">
-            <Gallery dataList={ecpayGalleryData} />
+        <ContentArticle title="近期綠界訊息收集處" subTitle="點擊可至回應的影片時間">
+            <Gallery dataList={ecpayGalleryData.slice(0, 6)} />
+            <a href="/friends/ecpay" className={styles.moreContent}>更多內容......</a>
         </ContentArticle>
-        <ContentArticle title="歐付寶訊息收集處（點擊可至回應的影片時間）">
-            <Gallery dataList={opayGalleryData} />
+        <ContentArticle title="近期歐付寶訊息收集處" subTitle="點擊可至回應的影片時間">
+            <Gallery dataList={opayGalleryData.slice(0, 6)} />
+            <a href="/friends/opay" className={styles.moreContent}>更多內容......</a>
         </ContentArticle>
-        <ContentArticle title="棉花糖收集處（點擊可至回應的影片時間）">
-            <Gallery dataList={marshmallowGalleryData} />
+        <ContentArticle title="近期棉花糖收集處" subTitle="點擊可至回應的影片時間">
+            <Gallery dataList={marshmallowGalleryData.slice(0, 6)} />
+            <a href="/friends/marshmallow" className={styles.moreContent}>更多內容......</a>
         </ContentArticle>
       </section>
     </Layout>

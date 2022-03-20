@@ -1,9 +1,10 @@
 import styles from './contentArticle.module.css';
 
-export default function ContentArticle({children, title}) {
+export default function ContentArticle({children, title, subTitle}) {
     return (
         <article className={styles.box}>
-            <h2 className={styles.header}>{title}</h2>
+            {title && <h2 className={styles.header}>{title}</h2>}
+            {subTitle && <h3 className={styles.subHeader}>{subTitle}</h3>}
             {children}
         </article>);
 }

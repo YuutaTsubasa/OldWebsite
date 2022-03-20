@@ -47,6 +47,23 @@ export default function Home({ communityLinksData }) {
             }} />
          </div>
         </ContentArticle>
+        <ContentArticle title="歷來大事記">
+          <ul>
+            <li>2021/07/31: 初配信，正式活動開始。</li>
+            <li>2021/08/01: Youtube 200 訂閱達成。</li>
+            <li>2021/08/18: Youtube 300 訂閱達成。</li>
+            <li>2021/09/11: 第一次籌備八人大型連動直播《猫島家族大連動》。</li>
+            <li>2021/09/17: Youtube 400 訂閱達成。</li>
+            <li>2021/10/10: Youtube 500 訂閱達成，開始展開《500 訂閱大調整》計畫。</li>
+            <li>2021/10/20: Youtube 社群功能開放、Instagram 與 Plurk 社群啟動。</li>
+            <li>2021/10/31: Youtube 600 訂閱達成。</li>
+            <li>2021/12/19: Youtube 700 訂閱達成。</li>
+            <li>2022/01/13: Youtube 800 訂閱達成。</li>
+            <li>2022/02/25: Youtube 900 訂閱達成。</li>
+            <li>2022/03/13: 網站新樣式釋出。（預計會再調整內容顯示的方法）</li>
+          </ul>
+        </ContentArticle>
+
     </Layout>
   )
 }
