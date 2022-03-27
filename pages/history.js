@@ -96,7 +96,8 @@ export default function History({
         </ContentArticle>
 
         <ContentArticle title="歷來直播週表">
-          <Gallery dataList={weekGalleryData}/>
+          <Gallery dataList={weekGalleryData.slice(0, 6)}/>
+          <a href="/history/week" className={styles.moreContent}>更多內容......</a>
         </ContentArticle>
       </section>
     </Layout>
