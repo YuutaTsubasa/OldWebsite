@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import CommunityLinks from './communityLinks';
 import Navigator from './navigator';
+import ContentArticle from './contentArticle';
+import DisqusComments from './disqusComments';
 import styles from './layout.module.css';
 
 export const name = '悠太翼 Yuuta Tsubasa'
@@ -40,6 +42,14 @@ export default function Layout({children, subURL, title, communityLinksData}) {
                     {title && (<h1>{title}</h1>)}
                     <hr />
                     {children}
+                </section>
+                <section>
+                    <ContentArticle title="留言區">
+                        <DisqusComments 
+                            url={`https://yuuta-tsubasa.studio${subURL}`}
+                            identifier={subURL}
+                            title={title}/>
+                   </ContentArticle>
                 </section>
             </main>
             <footer>
