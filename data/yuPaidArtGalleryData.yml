@@ -1,4 +1,12 @@
 -
+  image: "images/arts/paid/06.png"
+  date: "2022/04/02"
+  authors:
+    -
+      name: "CC"
+      url: "https://twitter.com/etcelebi"
+  url: "https://twitter.com/etcelebi"
+-
   image: "images/arts/paid/05.jpg"
   date: "2021/12/31"
   authors:
