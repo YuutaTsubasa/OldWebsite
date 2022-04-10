@@ -61,6 +61,8 @@ export default function Home({ communityLinksData }) {
             <li>2022/01/13: Youtube 800 訂閱達成。</li>
             <li>2022/02/25: Youtube 900 訂閱達成。</li>
             <li>2022/03/13: 網站新樣式釋出。（預計會再調整內容顯示的方法）</li>
+            <li>2022/03/29: Youtube 1000 訂閱達成。</li>
+            <li>2022/04/07: Youtube 收益化達成。</li>
           </ul>
         </ContentArticle>
 
