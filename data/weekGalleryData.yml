@@ -1,4 +1,9 @@
 -
+  image: &image "/images/thumbnails/week/week38.png"
+  title: "第三十八週"
+  date: "2022/04/11 - 2022/04/17"
+  url: *image
+-
   image: &image "/images/thumbnails/week/week37.png"
   title: "第三十七週"
   date: "2022/04/04 - 2022/04/10"
