@@ -10,6 +10,7 @@ import {
   MARSHMALLOW_GALLERY_DATA_FILE_NAME,
   ECPAY_GALLERY_DATA_FILE_NAME,
   OPAY_GALLERY_DATA_FILE_NAME,
+  YOUTUBE_SUPER_CHAT_GALLERY_DATA_FILE_NAME,
   ACTIVITY_GALLERY_DATA_FILE_NAME } from '../lib/yamlDataLoader';
 import Gallery from '../components/gallery';
 
@@ -20,6 +21,7 @@ export async function getStaticProps() {
   const marshmallowGalleryData = loadYamlData(MARSHMALLOW_GALLERY_DATA_FILE_NAME);
   const ecpayGalleryData = loadYamlData(ECPAY_GALLERY_DATA_FILE_NAME);
   const opayGalleryData = loadYamlData(OPAY_GALLERY_DATA_FILE_NAME);
+  const youtubeSuperChatGalleryData = loadYamlData(YOUTUBE_SUPER_CHAT_GALLERY_DATA_FILE_NAME);
   const activityGalleryData = loadYamlData(ACTIVITY_GALLERY_DATA_FILE_NAME);
   
   return {
@@ -30,6 +32,7 @@ export async function getStaticProps() {
       marshmallowGalleryData,
       ecpayGalleryData,
       opayGalleryData,
+      youtubeSuperChatGalleryData,
       activityGalleryData
     }
   }
@@ -42,6 +45,7 @@ export default function Friends({
   marshmallowGalleryData,
   ecpayGalleryData,
   opayGalleryData,
+  youtubeSuperChatGalleryData,
   activityGalleryData}) {
   return (
     <Layout communityLinksData={communityLinksData} subURL="friends" title="FRIENDS">
@@ -58,6 +62,10 @@ export default function Friends({
         </ContentArticle>
         <ContentArticle title="活動收集處" subTitle="點擊可至活動參與連結">
             <Gallery dataList={activityGalleryData} useBigItem={true} />
+        </ContentArticle>
+        <ContentArticle title="近期 Youtube 超級留言訊息收集處" subTitle="點擊可至回應的影片時間">
+            <Gallery dataList={youtubeSuperChatGalleryData.slice(0, 6)} />
+            <a href="/friends/youtubesc" className={styles.moreContent}>更多內容......</a>
         </ContentArticle>
         <ContentArticle title="近期綠界訊息收集處" subTitle="點擊可至回應的影片時間">
             <Gallery dataList={ecpayGalleryData.slice(0, 6)} />
