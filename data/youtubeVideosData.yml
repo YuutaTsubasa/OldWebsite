@@ -1,4 +1,60 @@
 -
+  name: "【#Podcast】Vol. 185: 悠太翼的奇想程式生活 #3: OOCSS? BEM? CSS 模組化方式分享"
+  url: BGf4M0Q-15I
+  date: "2022/05/16"
+  authors:
+    -
+      name: 悠太翼
+      url: https://yuuta-tsubasa.studio
+-
+  name: "【#突發/#遊戲】Vol. 184: 艾爾登法環 Elden Ring #19: 從地下再到雪地的探險"
+  url: oj2GQQlbHII
+  date: "2022/05/14"
+  authors:
+    -
+      name: 悠太翼
+      url: https://yuuta-tsubasa.studio
+-
+  name: "【#雜談】Vol. 183: 2022.05.14 例行雜談"
+  url: XSrtKbsKbHc
+  date: "2022/05/14"
+  authors:
+    -
+      name: 悠太翼
+      url: https://yuuta-tsubasa.studio
+-
+  name: "【#程式】Vol. 182: 探索 UXML / USS - 利用 Unity 的新 UI 系統做 UI"
+  url: IQuQcKsrOxs
+  date: "2022/05/10"
+  authors:
+    -
+      name: 悠太翼
+      url: https://yuuta-tsubasa.studio
+-
+  name: "【#遊戲】Vol. 181: 艾爾登法環 Elden Ring #18: 繼續王城的探索"
+  url: BEiZLK131RY
+  date: "2022/05/09"
+  authors:
+    -
+      name: 悠太翼
+      url: https://yuuta-tsubasa.studio
+-
+  name: "【#Podcast】Vol. 180: 悠太翼的奇想程式生活 #2: 學習 Rust 時，間接跑去研究 LLVM 的無止盡學習分享"
+  url: evt_cAOB1x8
+  date: "2022/05/08"
+  authors:
+    -
+      name: 悠太翼
+      url: https://yuuta-tsubasa.studio
+-
+  name: "【#Podcast】Vol. 180: 悠太翼的奇想程式生活 #2: 學習 Rust 時，間接跑去研究 LLVM 的無止盡學習分享"
+  url: evt_cAOB1x8
+  date: "2022/05/08"
+  authors:
+    -
+      name: 悠太翼
+      url: https://yuuta-tsubasa.studio
+-
   name: "【#突發/#遊戲】Vol. 179: 艾爾登法環 Elden Ring #17: 該是抵達王城的時候了！"
   url: dMFysymXCFQ
   date: "2022/05/07"
@@ -827,7 +883,7 @@
       name: 悠太翼
       url: https://yuuta-tsubasa.studio
 -
-  name: "【#cover/歌ってみた】ルマ / Cover by 悠太翼"
+  name: "【#cover/歌ってみた】ルマ / Covered by 悠太翼"
   url: bi-wN04cl1w
   date: "2022/01/01"
   authors:
@@ -907,7 +963,7 @@
       name: 悠太翼
       url: https://yuuta-tsubasa.studio
 -
-  name: "【#cover/歌ってみた】KING / Cover by 悠太翼"
+  name: "【#cover/歌ってみた】KING / Covered by 悠太翼"
   url: sLnzGXuQs3w
   date: "2021/12/17"
   authors:
