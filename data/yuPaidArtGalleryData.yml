@@ -1,4 +1,20 @@
 -
+  image: "images/arts/paid/08.png"
+  date: "2022/04/02"
+  authors:
+    -
+      name: "白蛇梅伊"
+      url: "https://twitter.com/Wander2_Meii"
+  url: "https://twitter.com/Wander2_Meii"
+-
+  image: "images/arts/paid/07.png"
+  date: "2022/04/02"
+  authors:
+    -
+      name: "猫島羽依"
+      url: "https://twitter.com/NekosimaYui"
+  url: "https://twitter.com/NekosimaYui"
+-
   image: "images/arts/paid/06.png"
   date: "2022/04/02"
   authors:
