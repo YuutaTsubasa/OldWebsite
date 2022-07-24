@@ -1,4 +1,12 @@
 -
+  image: "images/arts/paid/09.png"
+  date: "2022/06/05"
+  authors:
+    -
+      name: "鈴虫"
+      url: "https://twitter.com/RinHuei"
+  url: "https://twitter.com/RinHuei"
+-
   image: "images/arts/paid/08.png"
   date: "2022/04/02"
   authors:

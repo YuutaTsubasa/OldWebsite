@@ -1,4 +1,19 @@
 -
+  image: &image "/images/thumbnails/week/week53.png"
+  title: "第五十三週"
+  date: "2022/07/25 - 2022/07/31"
+  url: *image
+-
+  image: &image "/images/thumbnails/week/week52.png"
+  title: "第五十二週"
+  date: "2022/07/18 - 2022/07/24"
+  url: *image
+-
+  image: &image "/images/thumbnails/week/week51.png"
+  title: "第五十一週"
+  date: "2022/07/11 - 2022/07/17"
+  url: *image
+-
   image: &image "/images/thumbnails/week/week50.png"
   title: "第五十週"
   date: "2022/07/04 - 2022/07/10"
