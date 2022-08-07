@@ -1,4 +1,18 @@
 -
+  image: "/images/arts/youtubesc/11.png"
+  date: "2022/08/03"
+  authors: 
+    -
+      name: "Catlop凱拉"
+  url: "https://yutaii.run/v/240?t=11327"
+-
+  image: "/images/arts/youtubesc/10.png"
+  date: "2022/08/01"
+  authors: 
+    -
+      name: "貓耳 Nekomix Ch."
+  url: "https://yutaii.run/v/238?t=12971"
+-
   image: "/images/arts/youtubesc/09.png"
   date: "2022/07/16"
   authors: 
@@ -60,4 +74,4 @@
   authors: 
     -
       name: "倫貝爾"
-  url: "https://yutaii.run/ v/160?t=10136"
+  url: "https://yutaii.run/v/160?t=10136"

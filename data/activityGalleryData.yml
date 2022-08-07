@@ -1,4 +1,27 @@
 -
+  image: "/images/arts/activity/07.png"
+  date: "2022/08/03"
+  title: "【#OpenVerseChallengeTW/#夏日與你/#shorts/#活動】【Open Verse Challenge】夏日與你 with 希珥 Shir Ch."
+  authors: 
+    -
+      name: "希珥 Shir Ch."
+      url: "https://www.youtube.com/channel/UCaaaRyNQEACU09Ocw3EIh-w"
+  url: "https://youtube.com/shorts/M5PjKDZxiko?feature=share"
+  tags: 
+    - "OpenVerseChallengeTW"
+    - "夏日與你"
+-
+  image: "/images/arts/activity/06.jpg"
+  date: "2022/06/04"
+  title: "Super Sonic Revolution 2022 第四天 Sonic Riders - yuutatsubasa(悠太翼)"
+  authors: 
+    -
+      name: "Super Sonic Revolution 2022"
+      url: "https://www.twitch.tv/supersonicrevolution"
+  url: "https://www.twitch.tv/videos/1496298754?filter=highlights&sort=time"
+  tags: 
+    - "SuperSonicRevolution2022"
+-
   image: "/images/arts/activity/05.jpg"
   date: "2021/12/31"
   title: "【歌ってみた】打上花火 - DAOKO × 米津玄師 Covered by 小森未央 & @Yuuta Ch. 悠太翼"
