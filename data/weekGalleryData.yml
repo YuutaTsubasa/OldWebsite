@@ -1,4 +1,19 @@
 -
+  image: &image "/images/thumbnails/week/week62.png"
+  title: "第六十二週"
+  date: "2022/09/26 - 2022/10/02"
+  url: *image
+-
+  image: &image "/images/thumbnails/week/week61.png"
+  title: "第六十一週"
+  date: "2022/09/19 - 2022/09/25"
+  url: *image
+-
+  image: &image "/images/thumbnails/week/week60.png"
+  title: "第六十週"
+  date: "2022/09/12 - 2022/09/18"
+  url: *image
+-
   image: &image "/images/thumbnails/week/week59.png"
   title: "第五十九週"
   date: "2022/09/05 - 2022/09/11"
