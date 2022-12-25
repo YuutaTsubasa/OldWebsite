@@ -22,7 +22,7 @@ export default function Home({ communityLinksData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-
+{/* 
       <ContentArticle title="自我介紹">
       <img src="images/introduce.jpg" alt="自我介紹" className={styles.image}/>
       <p>
@@ -33,7 +33,7 @@ export default function Home({ communityLinksData }) {
         <a href="https://yutaii.run/youtube" target="_blank">
           <img src="/images/week.png" alt="本週行事曆" className={styles.image}/>
         </a>
-      </ContentArticle>
+      </ContentArticle> */}
       <ContentArticle title="官方 Youtube">
         <iframe className={styles.youtube} width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLHDTW9-5SsB_GEclHq9W6njQjRSCNefEo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </ContentArticle>
@@ -63,6 +63,7 @@ export default function Home({ communityLinksData }) {
             <li>2022/03/13: 網站新樣式釋出。（預計會再調整內容顯示的方法）</li>
             <li>2022/03/29: Youtube 1000 訂閱達成。</li>
             <li>2022/04/07: Youtube 收益化達成。</li>
+            <li>2022/09/20: Youtube 2000 訂閱達成。</li>
           </ul>
         </ContentArticle>
 

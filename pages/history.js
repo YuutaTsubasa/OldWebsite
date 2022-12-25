@@ -82,10 +82,10 @@ export default function History({
         <title>{`${siteTitle}：歷史紀錄`}</title>
       </Head>
       <section className={styles.mainContent}>
-        <ContentArticle title="近期直播" subTitle="URL: https://yutaii.run/v/編號">
+        {/* <ContentArticle title="近期直播" subTitle="URL: https://yutaii.run/v/編號">
           <Gallery dataList={archivedStreamingsData.slice(0, 6)}/>
           <a href="/history/streaming" className={styles.moreContent}>更多內容......</a>
-        </ContentArticle>
+        </ContentArticle> */}
 
         <ContentArticle title="歷來工具介紹影片" subTitle="URL: https://yutaii.run/tool/編號">
           <Gallery dataList={toolGalleryData}/>
@@ -95,10 +95,10 @@ export default function History({
           <Gallery dataList={coverGalleryData}/>
         </ContentArticle>
 
-        <ContentArticle title="歷來直播週表">
+        {/* <ContentArticle title="歷來直播週表">
           <Gallery dataList={weekGalleryData.slice(0, 6)}/>
           <a href="/history/week" className={styles.moreContent}>更多內容......</a>
-        </ContentArticle>
+        </ContentArticle> */}
       </section>
     </Layout>
   )
